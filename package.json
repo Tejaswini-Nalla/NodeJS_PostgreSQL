@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Tejaswini-Nalla/NodeJS_PostgreSQL/issues"
   },
-  "homepage": "https://github.com/Tejaswini-Nalla/NodeJS_PostgreSQL#readme"
+  "homepage": "https://github.com/Tejaswini-Nalla/NodeJS_PostgreSQL#readme",
+  "dependencies": {
+    "pg": "^8.2.1"
+  }
 }
