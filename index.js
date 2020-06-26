@@ -7,7 +7,20 @@ const client = new Client({
     port: 5432
 });
 client.connect();
-client.query('SELECT NOW()', (err, res) => {
-    console.log(err, res)
-    client.end()
+const query = `
+CREATE TABLE IF NOT EXISTS users(
+    id serial NOT NULL PRIMARY KEY,
+    email varchar,
+    firstname varchar,
+    lastname varchar,
+    age int
+);
+`;
+//using callbacks
+client.query(query, (err, res) => {
+    if (err) {
+        return console.log("Error", err.message);
+    }
+    console.log("Table created succesfully");
+    client.end();
 });
