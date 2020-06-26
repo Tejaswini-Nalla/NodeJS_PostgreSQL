@@ -9,7 +9,7 @@ const client = new Client({
 client.connect();
 const query = `
 CREATE TABLE IF NOT EXISTS users(
-    id serial NOT NULL PRIMARY KEY,
+    id serial NOT NULL PRIMARY KEY, 
     email varchar,
     firstname varchar,
     lastname varchar,
@@ -22,5 +22,10 @@ client.query(query, (err, res) => {
         return console.log("Error", err.message);
     }
     console.log("Table created succesfully");
-    client.end();
 });
+const insertQuery = `INSERT INTO users (email, firstname, lastname, age) 
+                VALUES('t@gmail.com','Tejaswini','Nalla',21)`;
+client.query(insertQuery)
+    .then(res => console.log("Successfully Inserted"))
+    .catch(err => console.log(err.message))
+    .finally(() => client.end());
