@@ -1,0 +1,19 @@
+{
+  "name": "nodejs_postgresql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tejaswini-Nalla/NodeJS_PostgreSQL.git"
+  },
+  "author": "Tejaswini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tejaswini-Nalla/NodeJS_PostgreSQL/issues"
+  },
+  "homepage": "https://github.com/Tejaswini-Nalla/NodeJS_PostgreSQL#readme"
+}
