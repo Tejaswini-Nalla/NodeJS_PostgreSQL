@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Tejaswini-Nalla/NodeJS_PostgreSQL#readme",
   "dependencies": {
-    "pg": "^8.2.1"
+    "pg": "^8.11.0"
   }
 }
